@@ -14,12 +14,12 @@ const config = {
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'tommysteryy', // Usually your GitHub org/user name.
-  projectName: 'my-docs', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'zh-Hans'],
+    locales: ['en'],
   },
 
   presets: [
@@ -67,7 +67,7 @@ const config = {
         title: 'Tommy',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/bitmoji.png',
+          src: '/docs/img/bitmoji.png',
         },
         items: [
           {
@@ -76,7 +76,7 @@ const config = {
             position: 'left',
             label: 'About Me',
           },
-          {to: '/docs/category/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/docs/category/blog', label: 'Blog', position: 'left'},
           {
             href: 'mailto:tommysteryy@gmail.com',
             label: 'Email',

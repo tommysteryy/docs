@@ -35,5 +35,7 @@ Have done some, want to do more!
 
 ### Undergraduate Research Assistant @ [Artificial Intelligence in Medicine (AIM) Lab at UBC](https://aimlab.ca/)
 
+#### Jan 2023 - Apr 2023
+
 - Assisting deep learning algorithm development for cancer classification using PyTorch, Tensorflow, and singularity. 
 - Weekly deep-dive into state-of-the-art machine learning research, with a focus on deep learning for histopathology.

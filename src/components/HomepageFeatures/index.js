@@ -28,7 +28,7 @@ const FeatureList = [
   },
   {
     title: 'Leadership Experience',
-    img: require('@site/static/img/tcf-3.png').default,  // Use the 'img' property for PNGs
+    img: require('@site/static/img/tcf.png').default,  // Use the 'img' property for PNGs
     description: (
       <>
         I am truly honoured to have served as both tech lead and team lead in different organizations.

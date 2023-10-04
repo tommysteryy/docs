@@ -2,20 +2,23 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+// url for badges:
+// https://ileriayo.github.io/markdown-badges/
+
 const FeatureList = [
   {
     title: 'Extensive Industry Experience',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/logos.svg').default,
     description: (
       <>
-        I have been fortunate enough to complete internships at global SaaS companies, 
+        I have been fortunate enough to complete internships at global SaaS companies,
         ML research institutes, and Canadian top start-ups, learning different skills at each.
       </>
     ),
   },
   {
     title: 'Wide Range of Technical Competencies',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/badges.svg').default,
     description: (
       <>
         I am proud to have substantial experience in languages like Python, Ts/Js, C++, PHP, HTML, SQL, R and technologies like
@@ -25,7 +28,7 @@ const FeatureList = [
   },
   {
     title: 'Leadership Experience',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    img: require('@site/static/img/tcf-3.png').default,  // Use the 'img' property for PNGs
     description: (
       <>
         I am truly honoured to have served as both tech lead and team lead in different organizations.
@@ -35,11 +38,14 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description, img }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {img ?
+          <img src={img} className={styles.featureSvg} alt={title} /> :
+          <Svg className={styles.featureSvg} role="img" />
+        }
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

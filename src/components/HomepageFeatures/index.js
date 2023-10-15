@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Extensive Industry Experience',
-    Svg: require('@site/static/img/logos.svg').default,
+    img: require('@site/static/img/logos.png').default,
     description: (
       <>
         I have been fortunate enough to complete internships at global SaaS companies,
